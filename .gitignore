@@ -1,0 +1,5 @@
+tools/docs/
+tools/docs.json
+tools/index-source.html
+*.zip
+*.tar.gz
