@@ -1,0 +1,121 @@
+SUM|number1, [number2], …|12, 18, 25|Add numbers or the values in a range.
+AVERAGE|number1, [number2], …|10, 20, 30|Find the arithmetic mean.
+MIN|number1, [number2], …|12, 3, 8|Find the smallest number.
+MAX|number1, [number2], …|12, 3, 8|Find the largest number.
+COUNT|value1, [value2], …|12, "North", 8|Count numeric values.
+COUNTA|value1, [value2], …|12, "North", 8|Count values including text and logical values.
+COUNTBLANK|range|B2:B30|Count blank cells in a range.
+PRODUCT|number1, [number2], …|2, 3, 4|Multiply numbers together.
+MEDIAN|number1, [number2], …|4, 10, 90|Find the middle value of a numeric list.
+ABS|number|-12|Get a number's magnitude.
+SIGN|number|-12|Return -1, 0, or 1 based on the sign.
+SQRT|number|81|Find the positive square root.
+POWER|number, power|3, 4|Raise a number to a power.
+MOD|number, divisor|17, 5|Find the remainder with the sign of the divisor.
+QUOTIENT|numerator, denominator|17, 5|Keep the integer part of a division result.
+INT|number|-3.7|Round down to the nearest integer.
+TRUNC|number, [num_digits]|-3.768, 2|Remove decimal digits without rounding.
+ROUND|number, num_digits|24.365, 2|Round to the specified number of digits.
+ROUNDDOWN|number, num_digits|24.369, 2|Round toward zero.
+ROUNDUP|number, num_digits|24.361, 2|Round away from zero.
+PI|||
+SIN|number|0.5|Find the sine of an angle in radians.
+COS|number|0.5|Find the cosine of an angle in radians.
+TAN|number|0.5|Find the tangent of an angle in radians.
+RADIANS|angle|90|Convert degrees to radians.
+DEGREES|angle|3.14159265358979|Convert radians to degrees.
+EXP|number|2|Raise e to the specified power.
+LN|number|10|Find the natural logarithm.
+LOG10|number|1000|Find the base-ten logarithm.
+LOG|number, [base]|64, 2|Find a logarithm using the chosen base.
+IF|logical_test, value_if_true, [value_if_false]|TRUE, "Pass", "Review"|Choose one of two results based on a condition.
+IFERROR|value, value_if_error|A2/B2, "Check divisor"|Replace a calculation error with a fallback result.
+IFNA|value, value_if_na|MATCH("Pen", A2:A10, 0), "Missing"|Replace a #N/A error with a fallback result.
+IFS|logical_test1, value_if_true1, [logical_test2, value_if_true2], …|A2>=90, "A", A2>=80, "B", TRUE, "Other"|Return a result for the first true condition.
+AND|logical1, [logical2], …|TRUE, FALSE|Check whether every condition is true.
+OR|logical1, [logical2], …|TRUE, FALSE|Check whether at least one condition is true.
+NOT|logical|TRUE|Reverse a logical value.
+TRUE|||
+FALSE|||
+ISNUMBER|value|42|Check whether a value is numeric.
+ISTEXT|value|"North"|Check whether a value is text.
+ISLOGICAL|value|TRUE|Check whether a value is TRUE or FALSE.
+LEN|text|"Excel"|Count the characters in a text value.
+UPPER|text|"Field Guide"|Convert text to uppercase.
+LOWER|text|"Field Guide"|Convert text to lowercase.
+TRIM|text|"  North   Region  "|Remove extra ASCII spaces while keeping single spaces between words.
+LEFT|text, [num_chars]|"Spreadsheet", 6|Take characters from the beginning of text.
+RIGHT|text, [num_chars]|"Spreadsheet", 5|Take characters from the end of text.
+MID|text, start_num, num_chars|"Spreadsheet", 7, 5|Take characters starting at a one-based position.
+CONCAT|text1, [text2], …|"North", " ", "Region"|Join text values in order.
+CONCATENATE|text1, [text2], …|"North", " ", "Region"|Join text values using the legacy text function.
+TEXTJOIN|delimiter, ignore_empty, text1, [text2], …|", ", TRUE, "Red", "Blue"|Join text values with a separator.
+EXACT|text1, text2|"Excel", "excel"|Compare text with case sensitivity.
+REPT|text, number_times|"ab", 3|Repeat text a specified number of times.
+SUBSTITUTE|text, old_text, new_text, [instance_num]|"red red", "red", "blue", 2|Replace matching text, optionally targeting one occurrence.
+TEXT|value, format_text|0.126, "0.0%"|Convert a number to text in the chosen display format.
+TEXTBEFORE|text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found]|"Ada Lovelace", " "|Take the text before a delimiter.
+TEXTAFTER|text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found]|"Ada Lovelace", " "|Take the text after a delimiter.
+TEXTSPLIT|text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with]|"Red,Blue", ","|Split text across worksheet rows or columns.
+FIND|find_text, within_text, [start_num]|"b", "abc"|Find a substring's position using case-sensitive matching.
+SEARCH|find_text, within_text, [start_num]|"B", "abc"|Find a substring's position without matching case.
+SUMIF|range, criteria, [sum_range]|A2:A10, "North", B2:B10|Add values that meet one condition.
+SUMIFS|sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], …|C2:C10, A2:A10, "North", B2:B10, ">10"|Add values whose rows match several conditions.
+COUNTIF|range, criteria|B2:B15, ">=10"|Count cells that meet one condition.
+COUNTIFS|criteria_range1, criteria1, [criteria_range2, criteria2], …|A2:A10, "North", B2:B10, ">10"|Count rows that meet several conditions.
+AVERAGEIF|range, criteria, [average_range]|A2:A10, "North", B2:B10|Average the values associated with matching cells.
+AVERAGEIFS|average_range, criteria_range1, criteria1, [criteria_range2, criteria2], …|C2:C10, A2:A10, "North"|Average the values associated with several conditions.
+VLOOKUP|lookup_value, table_array, col_index_num, [range_lookup]|"Pen", A2:D20, 4, FALSE|Look down the first column and return a value from the matching row.
+HLOOKUP|lookup_value, table_array, row_index_num, [range_lookup]|"April", A1:F5, 4, FALSE|Look across the first row and return a value from the matching column.
+XLOOKUP|lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode]|"Pen", A2:A20, D2:D20, "Missing"|Search one range and return the corresponding value from another.
+INDEX|array, row_num, [column_num]|A2:D20, 3, 4|Return the value at a position in a range or array.
+MATCH|lookup_value, lookup_array, [match_type]|"Pen", A2:A20, 0|Find the relative position of a matching item.
+XMATCH|lookup_value, lookup_array, [match_mode], [search_mode]|"Pen", A2:A20|Find a matching position using configurable matching and search modes.
+FILTER|array, include, [if_empty]|A2:C20, B2:B20="North", "No rows"|Return the rows or columns that meet a condition.
+SORT|array, [sort_index], [sort_order], [by_col]|A2:C20, 3, -1|Sort a range and return the sorted values as an array.
+SORTBY|array, by_array1, [sort_order1], [by_array2, sort_order2], …|A2:C20, C2:C20, -1|Sort values using one or more separate keys.
+UNIQUE|array, [by_col], [exactly_once]|A2:A20|Return distinct values from a range or array.
+SEQUENCE|rows, [columns], [start], [step]|5, 1, 10, 2|Generate an array of evenly spaced numbers.
+TAKE|array, rows, [columns]|A2:C20, 5|Keep rows or columns from either edge of an array.
+DROP|array, rows, [columns]|A2:C20, 2|Remove rows or columns from either edge of an array.
+HSTACK|array1, [array2], …|A2:A10, C2:C10|Append arrays side by side.
+VSTACK|array1, [array2], …|A2:C10, A12:C20|Append arrays vertically.
+TRANSPOSE|array|A2:C5|Swap rows and columns.
+ROW|[reference]|B12|Get the worksheet row number.
+COLUMN|[reference]|D12|Get the worksheet column number.
+ROWS|array|A2:C10|Count rows in a reference or array.
+COLUMNS|array|A2:C10|Count columns in a reference or array.
+DATE|year, month, day|2026, 11, 25|Build an Excel date from numeric parts.
+TODAY|||Get the current date.
+NOW|||Get the current date and time.
+YEAR|serial_number|DATE(2026,11,25)|Extract the year from an Excel date.
+MONTH|serial_number|DATE(2026,11,25)|Extract the month number from an Excel date.
+DAY|serial_number|DATE(2026,11,25)|Extract the day of the month from an Excel date.
+DAYS|end_date, start_date|DATE(2026,12,1), DATE(2026,11,25)|Find the number of days between two dates.
+NETWORKDAYS|start_date, end_date, [holidays]|A2, B2, H2:H10|Count weekdays between two dates, excluding supplied holidays.
+WORKDAY|start_date, days, [holidays]|A2, 10, H2:H10|Move a date by a specified number of working days.
+EOMONTH|start_date, months|A2, 1|Find the last day of a month relative to a starting date.
+EDATE|start_date, months|A2, 3|Move a date forward or backward by whole months.
+LET|name1, name_value1, calculation_or_name2, …|price, 12, price*3|Assign names to intermediate values within a formula.
+LAMBDA|[parameter1, parameter2, …], calculation|x, x*2|Define a reusable calculation with named parameters.
+REGEXTEST|text, pattern, [case_sensitivity]|"AB-123", "^[A-Z]{2}-[0-9]+$"|Check whether text matches a regular expression.
+REGEXEXTRACT|text, pattern, [return_mode], [case_sensitivity]|"AB-123", "[0-9]+"|Extract text matching a regular expression.
+REGEXREPLACE|text, pattern, replacement, [occurrence], [case_sensitivity]|"AB-123", "[0-9]+", "000"|Replace text matching a regular expression.
+GROUPBY|row_fields, values, function, [field_headers], [total_depth], [sort_order], [filter_array], [field_relationship]|A2:A20, B2:B20, SUM|Group values by row fields and calculate summaries.
+PIVOTBY|row_fields, col_fields, values, function, [field_headers], [row_total_depth], [row_sort_order], [col_total_depth], [col_sort_order], [filter_array], [relative_to]|A2:A20, B2:B20, C2:C20, SUM|Compute summaries grouped by both row and column fields.
+PMT|rate, nper, pv, [fv], [type]|5%/12, 60, -10000|Calculate a fixed periodic loan payment.
+NPV|rate, value1, [value2], …|10%, B2:B10|Discount future cash flows to their present value.
+IRR|values, [guess]|B2:B10, 10%|Find the periodic discount rate that gives cash flows a zero net present value.
+STDEV.S|number1, [number2], …|8, 10, 12|Estimate standard deviation from a sample.
+STDEV.P|number1, [number2], …|8, 10, 12|Calculate standard deviation for an entire population.
+VAR.S|number1, [number2], …|8, 10, 12|Estimate variance from a sample.
+VAR.P|number1, [number2], …|8, 10, 12|Calculate variance for an entire population.
+CORREL|array1, array2|A2:A20, B2:B20|Measure the linear relationship between two sets of values.
+CHOOSE|index_num, value1, [value2], …|2, "Red", "Blue"|Pick a value by its one-based position.
+SUBTOTAL|function_num, ref1, [ref2], …|9, B2:B20|Calculate a summary that ignores filtered-out rows.
+HYPERLINK|link_location, [friendly_name]|"https://example.com", "Example"|Create a clickable link in a worksheet.
+ISBLANK|value|A2|Check whether a cell is empty.
+RAND|||Generate a random decimal from zero up to one.
+RANDBETWEEN|bottom, top|1, 6|Generate a random integer within the specified bounds.
+IMAGE|source, [alt_text], [sizing], [height], [width]|"https://example.com/photo.png", "Photo"|Display an image in a worksheet cell.
+

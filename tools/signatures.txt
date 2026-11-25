@@ -1,0 +1,193 @@
+AGGREGATE:function_num, options, ref1, [ref2], …
+BITAND BITOR BITXOR:number1, number2
+BITLSHIFT BITRSHIFT:number, shift_amount
+BYCOL BYROW:array, lambda
+CEILING CEILING.PRECISE ISO.CEILING FLOOR FLOOR.PRECISE MROUND:number, significance
+CEILING.MATH FLOOR.MATH:number, [significance], [mode]
+CELL:info_type, [reference]
+CHAR UNICHAR:number
+CHIDIST:x, deg_freedom
+CHISQ.DIST:x, deg_freedom, cumulative
+CHISQ.DIST.RT:x, deg_freedom
+CHIINV CHISQ.INV CHISQ.INV.RT:probability, deg_freedom
+CHISQ.TEST CHITEST:actual_range, expected_range
+CHOOSECOLS:array, col_num1, [col_num2], …
+CHOOSEROWS:array, row_num1, [row_num2], …
+CLEAN CODE DBCS JIS LENB PHONETIC PROPER T UNICODE:text
+COMBIN COMBINA PERMUT PERMUTATIONA:number, number_chosen
+COMPLEX:real_num, i_num, [suffix]
+CONFIDENCE CONFIDENCE.NORM CONFIDENCE.T:alpha, standard_dev, size
+CONVERT:number, from_unit, to_unit
+COSH COT COTH CSC CSCH EVEN EXP FACT FACTDOUBLE FISHER FISHERINV GAMMA GAMMALN GAMMALN.PRECISE GAUSS ODD PHI SEC SECH SINH SQRTPI TANH:number
+COUPDAYBS COUPDAYS COUPDAYSNC COUPNCD COUPNUM COUPPCD:settlement, maturity, frequency, [basis]
+COVAR COVARIANCE.P COVARIANCE.S F.TEST FTEST PEARSON RSQ:array1, array2
+CRITBINOM:trials, probability_s, alpha
+CUBEKPIMEMBER:connection, kpi_name, kpi_property, [caption]
+CUBEMEMBER:connection, member_expression, [caption]
+CUBEMEMBERPROPERTY:connection, member_expression, property
+CUBERANKEDMEMBER:connection, set_expression, rank, [caption]
+CUBESET:connection, set_expression, [caption], [sort_order], [sort_by]
+CUBESETCOUNT:set
+CUBEVALUE:connection, [member_expression1], [member_expression2], …
+CUMIPMT CUMPRINC:rate, nper, pv, start_period, end_period, type
+DATEDIF:start_date, end_date, unit
+DATEVALUE:date_text
+DAVERAGE DCOUNT DCOUNTA DGET DMAX DMIN DPRODUCT DSTDEV DSTDEVP DSUM DVAR DVARP:database, field, criteria
+DAYS360:start_date, end_date, [method]
+DB:cost, salvage, life, period, [month]
+DDB:cost, salvage, life, period, [factor]
+DEC2BIN DEC2HEX DEC2OCT HEX2BIN HEX2OCT OCT2BIN OCT2HEX:number, [places]
+DECIMAL:text, radix
+DELTA:number1, [number2]
+GESTEP:number, [step]
+DETECTLANGUAGE:text
+DEVSQ GCD GEOMEAN HARMEAN MAXA MINA MODE MODE.MULT MODE.SNGL SKEW SKEW.P STDEV STDEVA STDEVP STDEVPA SUMSQ VAR VARA VARP VARPA:number1, [number2], …
+DISC:settlement, maturity, pr, redemption, [basis]
+DOLLAR:number, [decimals]
+DOLLARDE:fractional_dollar, fraction
+DOLLARFR:decimal_dollar, fraction
+DURATION MDURATION:settlement, maturity, coupon, yld, frequency, [basis]
+EFFECT:nominal_rate, npery
+ENCODEURL:text
+ERF:lower_limit, [upper_limit]
+ERF.PRECISE ERFC ERFC.PRECISE:x
+ERROR.TYPE:error_val
+EUROCONVERT:number, source, target, [full_precision], [triangulation_precision]
+EXPAND:array, rows, [columns], [pad_with]
+EXPON.DIST EXPONDIST:x, lambda, cumulative
+F.DIST:x, deg_freedom1, deg_freedom2, cumulative
+F.DIST.RT FDIST:x, deg_freedom1, deg_freedom2
+F.INV F.INV.RT FINV:probability, deg_freedom1, deg_freedom2
+FILTERXML:xml, xpath
+FINDB SEARCHB:find_text, within_text, [start_num]
+FIXED:number, [decimals], [no_commas]
+FORECAST.ETS:target_date, values, timeline, [seasonality], [data_completion], [aggregation]
+FORECAST.ETS.CONFINT:target_date, values, timeline, [confidence_level], [seasonality], [data_completion], [aggregation]
+FORECAST.ETS.SEASONALITY:values, timeline, [data_completion], [aggregation]
+FORECAST.ETS.STAT:values, timeline, statistic_type, [seasonality], [data_completion], [aggregation]
+FORECAST.LINEAR:x, known_y's, known_x's
+FORMULATEXT:reference
+FREQUENCY:data_array, bins_array
+FV:rate, nper, pmt, [pv], [type]
+FVSCHEDULE:principal, schedule
+GAMMA.DIST GAMMADIST:x, alpha, beta, cumulative
+GAMMA.INV GAMMAINV:probability, alpha, beta
+GETPIVOTDATA:data_field, pivot_table, [field1, item1], …
+GROWTH:known_y's, [known_x's], [new_x's], [const]
+HEX2DEC OCT2DEC:number
+HOUR MINUTE SECOND:serial_number
+HYPGEOM.DIST:sample_s, number_sample, population_s, number_pop, cumulative
+HYPGEOMDIST:sample_s, number_sample, population_s, number_pop
+IMABS IMAGINARY IMARGUMENT IMCONJUGATE IMCOS IMCOSH IMCOT IMCSC IMCSCH IMEXP IMLN IMLOG10 IMLOG2 IMREAL IMSEC IMSECH IMSIN IMSINH IMSQRT IMTAN:inumber
+IMDIV IMSUB:inumber1, inumber2
+IMPOWER:inumber, number
+IMPRODUCT IMSUM:inumber1, [inumber2], …
+INDIRECT:ref_text, [a1]
+INFO:type_text
+INTERCEPT SLOPE STEYX:known_y's, known_x's
+INTRATE:settlement, maturity, investment, redemption, [basis]
+IPMT PPMT:rate, per, nper, pv, [fv], [type]
+ISERR ISERROR ISNA ISNONTEXT ISREF N TYPE:value
+ISEVEN ISODD:number
+ISFORMULA:reference
+ISOMITTED:argument
+ISOWEEKNUM:date
+ISPMT:rate, per, nper, pv
+KURT LCM:number1, [number2], …
+LARGE SMALL:array, k
+LEFTB RIGHTB:text, [num_bytes]
+LINEST LOGEST:known_y's, [known_x's], [const], [stats]
+LOGINV LOGNORM.INV:probability, mean, standard_dev
+LOGNORM.DIST:x, mean, standard_dev, cumulative
+LOGNORMDIST:x, mean, standard_dev
+LOOKUP:lookup_value, lookup_vector, [result_vector]
+MAKEARRAY:rows, cols, lambda
+MAP:array1, [array2], …, lambda
+MAXIFS:max_range, criteria_range1, criteria1, [criteria_range2, criteria2], …
+MINIFS:min_range, criteria_range1, criteria1, [criteria_range2, criteria2], …
+MDETERM MINVERSE:array
+MULTINOMIAL:number1, [number2], …
+MIDB:text, start_num, num_bytes
+MIRR:values, finance_rate, reinvest_rate
+MMULT:array1, array2
+MUNIT:dimension
+NA:
+NEGBINOM.DIST:number_f, number_s, probability_s, cumulative
+NEGBINOMDIST:number_f, number_s, probability_s
+NETWORKDAYS.INTL:start_date, end_date, [weekend], [holidays]
+NOMINAL:effect_rate, npery
+NORM.DIST NORMDIST:x, mean, standard_dev, cumulative
+NORM.INV NORMINV:probability, mean, standard_dev
+NORM.S.DIST:z, cumulative
+NORM.S.INV NORMSINV:probability
+NORMSDIST:z
+NPER:rate, pmt, pv, [fv], [type]
+NUMBERVALUE:text, [decimal_separator], [group_separator]
+ODDFPRICE:settlement, maturity, issue, first_coupon, rate, yld, redemption, frequency, [basis]
+ODDFYIELD:settlement, maturity, issue, first_coupon, rate, pr, redemption, frequency, [basis]
+ODDLPRICE:settlement, maturity, last_interest, rate, yld, redemption, frequency, [basis]
+ODDLYIELD:settlement, maturity, last_interest, rate, pr, redemption, frequency, [basis]
+OFFSET:reference, rows, cols, [height], [width]
+PDURATION:rate, pv, fv
+PERCENTILE PERCENTILE.EXC PERCENTILE.INC:array, k
+PERCENTOF:data_subset, data_all
+PERCENTRANK PERCENTRANK.EXC PERCENTRANK.INC:array, x, [significance]
+POISSON POISSON.DIST:x, mean, cumulative
+PRICE:settlement, maturity, rate, yld, redemption, frequency, [basis]
+PRICEDISC:settlement, maturity, discount, redemption, [basis]
+PRICEMAT:settlement, maturity, issue, rate, yld, [basis]
+PROB:x_range, prob_range, lower_limit, [upper_limit]
+PV:rate, nper, pmt, [fv], [type]
+QUARTILE QUARTILE.EXC QUARTILE.INC:array, quart
+RANDARRAY:[rows], [columns], [min], [max], [whole_number]
+RANK RANK.AVG RANK.EQ:number, ref, [order]
+RATE:nper, pmt, pv, [fv], [type], [guess]
+RECEIVED:settlement, maturity, investment, discount, [basis]
+REDUCE SCAN:[initial_value], array, lambda
+REPLACE:old_text, start_num, num_chars, new_text
+REPLACEB:old_text, start_num, num_bytes, new_text
+ROMAN:number, [form]
+RRI:nper, pv, fv
+RTD:progID, server, topic1, [topic2], …
+SERIESSUM:x, n, m, coefficients
+SHEET:[value]
+SHEETS:[reference]
+SLN:cost, salvage, life
+STANDARDIZE:x, mean, standard_dev
+STOCKHISTORY:stock, start_date, [end_date], [interval], [headers], [property0], [property1], …
+SUMPRODUCT:array1, [array2], …
+SUMX2MY2 SUMX2PY2 SUMXMY2:array_x, array_y
+SWITCH:expression, value1, result1, [value2, result2], …
+SYD:cost, salvage, life, per
+T.DIST:x, deg_freedom, cumulative
+T.DIST.2T T.DIST.RT:x, deg_freedom
+T.INV T.INV.2T TINV:probability, deg_freedom
+T.TEST TTEST:array1, array2, tails, type
+TBILLEQ TBILLPRICE:settlement, maturity, discount
+TBILLYIELD:settlement, maturity, pr
+TDIST:x, deg_freedom, tails
+TIME:hour, minute, second
+TIMEVALUE:time_text
+TOCOL TOROW:array, [ignore], [scan_by_column]
+TRANSLATE:text, [source_language], [target_language]
+TREND:known_y's, [known_x's], [new_x's], [const]
+TRIMMEAN:array, percent
+TRIMRANGE:range, [trim_rows], [trim_cols]
+VALUE:text
+VALUETOTEXT:value, [format]
+VDB:cost, salvage, life, start_period, end_period, [factor], [no_switch]
+WEBSERVICE:url
+WEEKDAY WEEKNUM:serial_number, [return_type]
+WEIBULL WEIBULL.DIST:x, alpha, beta, cumulative
+WORKDAY.INTL:start_date, days, [weekend], [holidays]
+WRAPCOLS WRAPROWS:vector, wrap_count, [pad_with]
+XIRR:values, dates, [guess]
+XNPV:rate, values, dates
+XOR:logical1, [logical2], …
+YEARFRAC:start_date, end_date, [basis]
+YIELD:settlement, maturity, rate, pr, redemption, frequency, [basis]
+YIELDDISC:settlement, maturity, pr, redemption, [basis]
+YIELDMAT:settlement, maturity, issue, rate, pr, [basis]
+Z.TEST ZTEST:array, x, [sigma]
+CALL:register_id, [argument1], …
+REGISTER.ID:module_text, procedure, type_text
